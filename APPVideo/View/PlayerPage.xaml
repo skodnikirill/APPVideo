@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+            mc:Ignorable="d" NavigationPage.HasNavigationBar="False"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             x:Class="APPVideo.View.PlayerPage">
+    <Grid HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+        <mm:VideoView VideoAspect="AspectFill" Source="{Binding SelectedMovie.Url}" AutoPlay="True" VerticalOptions="FillAndExpand" 
+                      ShowControls="True" />
+    </Grid>
+</ContentPage>
